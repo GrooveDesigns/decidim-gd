@@ -1,0 +1,24 @@
+<div class="wrapper">
+  <div class="row collapse">
+    <div class="columns large-8 large-centered text-center page-title">
+      <h1>メールアドレスの認証を完了してください</h1>
+      <p class="text-alert">
+        <b>※ 会員登録はまだ完了していません</b>
+      </p>
+      <p>
+        登録メールアドレスに認証メールを送信しました。<br>
+        メールに記載されているリンクを開いて会員登録を完了してください。
+      </p>
+    </div>
+    <div class="columns large-8 large-centered text-center page-title">
+      <h2>登録認証メールが届かない場合</h2>
+      <p>迷惑メールフォルダに振り分けられていませんか？</p>
+      <p>「<%= current_organization.smtp_settings["from_email"].presence || Decidim.config.mailer_sender %>
+        」からのメールを受信できるように設定してください。
+      </p>
+    </div>
+    <div class="columns large-8 large-centered text-center page-title">
+      <%= link_to 'ユーザ登録確認メールが届かない方はこちら', new_confirmation_path(Decidim::User) %>
+    </div>
+  </div>
+</div>

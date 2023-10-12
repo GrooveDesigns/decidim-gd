@@ -1,0 +1,58 @@
+<% participatory_process = Decidim::ParticipatoryProcess.order(start_date: :desc).where(decidim_organization_id: current_organization.id).first %>
+<% steps = participatory_process&.steps %>
+<% components = participatory_process&.components %>
+<% past_phase = true %>
+<% if steps.present? && components.present? %>
+  <%# TODO: src/app/views/layouts/decidim/_phases_navigation.html.erb を呼び出せそうだが、若干差分がある %>
+  <div class="row expanded">
+    <div class="process-nav">
+      <div class="row">
+        <button class="process-nav__trigger hide-for-medium" data-toggle="process-nav-content">
+          <%= icon "caret-bottom", class: "icon--small process-nav__trigger__icon", aria_label: t("decidim.shared.extended_navigation_bar.unfold"), role: "img" %>
+          <span class="process-nav__link"><%= t("decidim.phase_menu.title") %></span>
+        </button>
+        <div class="row column process-nav__content" id="process-nav-content" data-toggler=".is-active">
+          <nav class="phases-navigation">
+            <ol class="phases-navigation--content">
+              <% steps&.each&.with_index do |step, index| %>
+                <% past_phase = false if step.active? %>
+                <% component = components[index] %>
+                <li class="phases-navigation--list-item">
+                  <div class="<%= if is_active_link?(main_component_path(component))
+                                    'phases-navigation--number-wrapper__active'
+                                  elsif step.active?
+                                    ' phases-navigation--number-wrapper__current'
+                                  elsif past_phase
+                                    'phases-navigation--number-wrapper__past'
+                                  else
+                                    'phases-navigation--number-wrapper'
+                                  end %>">
+                    <span class="phases-navigation--number"><%= index + 1 %></span>
+                  </div>
+                  <div class="phases-navigation--item-info">
+                    <div class="<%= if is_active_link?(main_component_path(component))
+                                      'phases-navigation--link__active'
+                                    elsif past_phase
+                                      'phases-navigation--link__past'
+                                    else
+                                      'phases-navigation--link'
+                                    end %>">
+                      <% if browser.device.mobile? %>
+                        <%= link_to "#{( step.active? ? '【進行中！】' : '' )} #{translated_attribute(step.title)}", main_component_path(component) %>
+                      <% else %>
+                        <%= link_to translated_attribute(step.title), main_component_path(component) %>
+                      <% end %>
+                    </div>
+                    <div class="phases-navigation--item-descripition">
+                      <%= translated_attribute(step.description).html_safe %>
+                    </div>
+                  </div>
+                </li>
+              <% end %>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>

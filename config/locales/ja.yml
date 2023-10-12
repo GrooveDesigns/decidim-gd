@@ -1,0 +1,7 @@
+ja:
+  decidim:
+    content_blocks:
+      navigation_phase:
+        name: フェーズナビゲーション
+    phase_menu:
+      title: 全体の進捗を見る

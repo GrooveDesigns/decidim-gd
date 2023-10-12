@@ -1,0 +1,65 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - .:/app
+      - node_modules:/app/node_modules
+      - gem:/app/vendor
+    environment:
+      - PORT=3000
+      - DATABASE_HOST=pg
+      - DATABASE_PORT=5432
+      - DATABASE_USERNAME=postgres
+      - DATABASE_PASSWORD=password
+      - RAILS_ENV=development
+      - REDIS_URL=redis://redis:6379
+    ports:
+      - 3000:3000
+    links:
+      - pg
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+  pg:
+    image: postgres:13
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+    volumes:
+      - pg-data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+  redis:
+    image: redis:6.2.5
+    ports:
+      - 6379:6379
+    volumes:
+      - ./docker/redis/redis.conf:/usr/local/etc/redis/redis.conf
+    command: redis-server /usr/local/etc/redis/redis.conf
+    sysctls:
+      - net.core.somaxconn=512
+  sidekiq:
+    depends_on:
+      - pg
+      - redis
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - .:/app
+      - gem:/app/vendor
+      - /app/tmp/cache
+    command: bundle exec sidekiq -C config/sidekiq.yml
+    environment:
+      - REDIS_URL=redis://redis:6379
+      - PORT=3000
+      - DATABASE_HOST=pg
+      - DATABASE_PORT=5432
+      - DATABASE_USERNAME=postgres
+      - DATABASE_PASSWORD=password
+      - RAILS_ENV=development
+volumes:
+  node_modules:
+  pg-data:
+  gem:

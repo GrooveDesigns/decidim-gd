@@ -1,0 +1,81 @@
+<div class="wrapper">
+  <div class="row collapse">
+    <div class="row collapse">
+      <div class="columns large-8 large-centered text-center page-title">
+        <h1><%= t(".sign_up") %></h1>
+        <p>
+          <%= t(".subtitle") %>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="columns large-6 medium-10 medium-centered">
+        <%= decidim_form_for(@form, namespace: "registration", as: resource_name, url: omniauth_registrations_path(resource_name), html: { class: "register-form new_user" }) do |f| %>
+          <div class="card">
+            <div class="card__content">
+              <%= form_required_explanation %>
+
+              <div class="user-person">
+                <div class="field">
+                  <%= f.text_field :name, help_text: t(".username_help") %>
+                </div>
+              </div>
+
+              <div class="field">
+                <%= f.text_field :real_name, help_text: t(".real_name_help"), autocomplete: "real_name" %>
+              </div>
+
+              <div class="field">
+                <%= f.email_field :email %>
+              </div>
+
+              <div class="field">
+                <%= f.text_field :zipcode, help_text: t(".zipcode_help") %>
+              </div>
+
+              <div class="field">
+                <%= f.number_field :birth_year, help_text: t(".birth_year_help") %>
+              </div>
+
+              <%= f.hidden_field :uid %>
+              <%= f.hidden_field :provider %>
+              <%= f.hidden_field :oauth_signature %>
+            </div>
+          </div>
+
+          <div class="card" id="card__tos">
+            <div class="card__content">
+              <h3><%= t(".tos_title") %></h3>
+
+              <div class="field">
+                <%= f.check_box :tos_agreement, label: t(".tos_agreement", link: link_to(t(".terms"), page_path("terms-and-conditions"), target: '_blank')) %>
+              </div>
+              <div class="field">
+                <% privacy_policy_link = ENV.fetch('PRIVACY_POLICY_URL') { '#' } %>
+                <%= f.check_box :privacy_policy_agreement, label: t(".privacy_policy_agreement", link: link_to(t(".privacy_policy"), privacy_policy_link, target: '_blank')) %>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" id="card__newsletter">
+            <div class="card__content">
+              <h3><%= t(".newsletter_title") %></h3>
+              <div class="field">
+                <%= f.check_box :newsletter, label: t(".newsletter"), checked: @form.newsletter %>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__content">
+              <div class="actions">
+                <%= f.submit t(".complete_profile"), class: "button expanded" %>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+<%= render "decidim/devise/shared/newsletter_modal" %>

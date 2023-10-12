@@ -1,0 +1,7 @@
+.hero {
+  background-position: center;
+
+  &::after {
+    background-color: rgba($black, .3);
+  }
+}

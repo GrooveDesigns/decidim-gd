@@ -1,0 +1,1039 @@
+ja:
+  activemodel:
+    attributes:
+      area:
+        area_type: エリアの種類
+        name: 名前
+        organization: 組織
+      area_type:
+        name: 名前
+        organization: 組織
+        plural: 複数形
+      attachment:
+        attachment_collection_id: フォルダ
+        description: 説明
+        file: ファイル
+        title: 添付ファイルまたは画像名
+      attachment_collection:
+        description: 説明
+        name: 名前
+      category:
+        description: 説明
+        name: 名前
+        parent_id: 親
+      component:
+        name: 名前
+        published_at: 公開日時
+        weight: 順番の位置
+      id: ID
+      import:
+        user_group_id: インポートを作成
+      newsletter:
+        body: 本文
+        subject: 件名
+      organization:
+        admin_terms_of_use_body: 管理者向け利用規約の本文
+        alert_color: アラート
+        available_authorizations: 利用可能な認証方式
+        badges_enabled: バッジを有効にする
+        comments_max_length: コメント最大長 (デフォルト値は 0 のまま)
+        cta_button_path: Call To Action ボタンのパス
+        cta_button_text: Call To Action ボタンのテキスト
+        customize_welcome_notification: ウェルカム通知をカスタマイズ
+        default_locale: 既定のロケール：
+        description: 説明
+        enable_omnipresent_banner: Show omnipresent banner
+        enable_participatory_space_filters: プロジェクトフィルタを有効にする
+        facebook_handler: Facebook handler
+        favicon: アイコン
+        force_authentication: 認証の強制
+        force_users_to_authenticate_before_access_organization: 組織にアクセスする前にユーザーの認証を強制する
+        from: 送信者メールアドレス
+        github_handler: GitHub handler
+        header_snippets: ヘッダスニペットを表示
+        highlight_alternative_color: 代替のハイライト
+        highlight_color: 強調表示
+        highlighted_content_banner_action_subtitle: アクションボタンのサブタイトル
+        highlighted_content_banner_action_title: アクションボタンのタイトル
+        highlighted_content_banner_action_url: アクションボタンURL
+        highlighted_content_banner_enabled: 強調表示されたコンテンツバナーを表示
+        highlighted_content_banner_image: 画像
+        highlighted_content_banner_short_description: 短い説明
+        highlighted_content_banner_title: タイトル
+        host: ホスト
+        instagram_handler: Instagram handler
+        logo: ロゴ
+        machine_translation_display_priority: 機械翻訳表示の優先度
+        machine_translation_display_priority_original: 元のテキストを最初にする
+        machine_translation_display_priority_translation: 翻訳テキストを最初にする
+        name: 名前
+        official_img_footer: 公式ロゴフッター
+        official_img_header: 公式ロゴヘッダー
+        official_url: 公式組織URL
+        omnipresent_banner_short_description: 短い説明
+        omnipresent_banner_title: タイトル
+        omnipresent_banner_url: URL
+        organization_admin_email: 組織管理者メールアドレス
+        organization_admin_name: 組織管理者名
+        organization_locales: 組織のロケール
+        primary_color: プライマリ（プライマリ）
+        reference_prefix: 参照の接頭辞：
+        rich_text_editor_in_public_views: 参加者にリッチテキストエディタを有効にする
+        secondary_color: Secondary
+        secondary_hosts: セカンダリホスト
+        send_welcome_notification: ウェルカム通知を送信
+        success_color: 成功
+        time_zone: タイムゾーン
+        tos_version: Terms of service version
+        twitter_handler: Twitter handler
+        user_groups_enabled: グループを有効にする
+        users_registration_mode: ユーザー登録モード
+        warning_color: 警告
+        welcome_notification_body: Welcome通知本文
+        welcome_notification_subject: ウェルカム通知の件名
+        youtube_handler: YouTube handler
+      scope:
+        code: コード
+        name: 名前
+        organization: 組織
+        parent_id: 親
+        scope_type: スコープの種類
+        scope_type_id: スコープの種類
+      scope_type:
+        name: 名前
+        organization: 組織
+        plural: 複数形
+      settings:
+        scope_id: スコープ
+      static_page:
+        allow_public_access: 認証なしでのアクセスを許可
+        changed_notably: 目立つ変更がありました。
+        content: コンテンツ
+        organization: 組織
+        show_in_footer: フッターに表示
+        slug: URL スラグ
+        title: タイトル
+        weight: 順番の位置
+      static_page_topic:
+        description: 説明
+        show_in_footer: フッターに表示
+        title: タイトル
+        weight: 順番の位置
+      user_group_csv_verification:
+        file: ファイル
+    errors:
+      models:
+        organization:
+          attributes:
+            official_img_footer:
+              allowed_file_content_types: 無効な画像ファイル
+            official_img_header:
+              allowed_file_content_types: 無効な画像ファイル
+      new_import:
+        attributes:
+          file:
+            invalid_mime_type: MIMEタイプが無効です
+  activerecord:
+    attributes:
+      decidim/static_page:
+        content: コンテンツ
+        slug: URL スラグ
+        title: タイトル
+      doorkeeper/application:
+        authorize_url: URL を承認
+        client_id: クライアント ID
+        client_secret: クライアントシークレット
+        organization_name: 組織名
+        organization_url: 取引先URL
+        redirect_uri: リダイレクトURI
+        site: ウェブサイト
+  decidim:
+    admin:
+      actions:
+        add: 追加
+        attachment:
+          new: 新しい添付ファイル
+        attachment_collection:
+          new: 新しい添付ファイルのコレクション
+        browse: 検索
+        category:
+          new: 新しいカテゴリ
+        export: 全てエクスポート
+        export-selection: 選択したものをエクスポート
+        import: インポート
+        manage: 管理
+        new: 新しい %{name}
+        newsletter:
+          new: 新しいニュースレター
+        participatory_space_private_user:
+          new: 新しいプロジェクトのプライベートユーザー
+        per_page: ページごと
+        permissions: アクセス許可
+        reject: 拒否
+        share: 共有
+        user:
+          new: 新規ユーザー
+        verify: 確認する
+      admin_terms_of_use:
+        accept:
+          error: 管理者向け利用規約に同意中にエラーが発生しました。
+          success: ありがとうございます、管理者向け利用規約に同意しました。
+        actions:
+          accept: 次の規約に同意します
+          are_you_sure: 管理者向け利用規約を削除してもよろしいですか？
+          refuse: 同意しない
+          title: 利用規約に同意する
+        required_review:
+          alert: '必須：管理者向け利用規約を確認してください'
+          callout: 管理者向け利用規約を確認してください。そうでなければ、プラットフォームを管理することはできません。
+          cta: 今すぐレビューしましょう。
+        title: 管理者向け利用規約
+      area_types:
+        create:
+          error: 新しいエリアタイプの作成中に問題が発生しました。
+          success: エリアタイプが正常に作成されました。
+        destroy:
+          success: エリアタイプを削除しました
+        edit:
+          title: エリアタイプの編集
+          update: 更新
+        new:
+          create: エリアタイプを作成
+          title: 新しいエリアタイプ
+        update:
+          error: このエリアタイプの更新中に問題が発生しました。
+          success: エリアタイプが正常に更新されました
+      areas:
+        create:
+          error: 新しいエリアの作成中に問題が発生しました。
+          success: エリアの作成に成功しました。
+        destroy:
+          has_spaces: このエリアには依存プロジェクトがあります。削除する前にプロジェクトがこのエリアを参照していないことを確認してください。
+          success: エリアの削除に成功しました
+        edit:
+          title: エリアを編集
+          update: 更新
+        new:
+          create: エリアを作成
+          title: 新しいエリア
+        no_areas: エリアがありません
+        update:
+          error: このエリアの更新中に問題が発生しました。
+          success: エリアの更新が完了しました
+      attachment_collections:
+        create:
+          error: 新しいフォルダの作成中に問題が発生しました。
+          success: フォルダが作成されました。
+        destroy:
+          success: フォルダが正常に破棄されました。
+        edit:
+          title: フォルダを編集
+          update: 更新
+        index:
+          attachment_collection_used: このフォルダは使用中のため削除できません。
+          attachment_collections_title: 添付ファイルフォルダ
+        new:
+          create: 作成
+          title: 新しいフォルダ
+        update:
+          error: フォルダの更新中に問題が発生しました。
+          success: フォルダが更新されました。
+      attachments:
+        create:
+          error: 新しい添付ファイルを作成中に問題が発生しました。
+          success: 添付ファイルが作成されました。
+        destroy:
+          success: 添付ファイルが正常に破棄されました。
+        edit:
+          title: 添付ファイルを編集
+          update: 更新
+        index:
+          attachments_title: 添付ファイル
+        new:
+          create: 添付ファイルを作成
+          title: 新しい添付ファイル
+        update:
+          error: この添付ファイルを更新中に問題が発生しました。
+          success: 添付ファイルが更新されました。
+      autocomplete:
+        no_results: 結果が見つかりませんでした
+        search_prompt: 検索するには少なくとも3文字を入力してください
+      block_user:
+        new:
+          action: アカウントをブロックして理由を送信
+          description: ユーザーをブロックすると、そのアカウントは利用できなくなります。ユーザーのブロックを解除することを検討する方法に関するガイドラインを判定通知に含めることができます。
+          justification: 判定理由
+          title: ユーザー %{name} をブロックする
+      categories:
+        create:
+          error: このカテゴリの作成中に問題が発生しました。
+          success: カテゴリの作成に成功しました。
+        destroy:
+          error: このカテゴリを削除する際に問題が発生しました。最初にサブカテゴリを削除してください。他のエンティティがこのカテゴリに属していないことを確認して、もう一度やり直してください。
+          success: カテゴリを削除しました。
+        edit:
+          title: カテゴリを編集
+          update: 更新
+        index:
+          categories_title: カテゴリ
+          category_used: このカテゴリは使用中のため削除できません。
+        new:
+          create: カテゴリを作成
+          title: 新しいカテゴリ
+        update:
+          error: このカテゴリの更新中に問題が発生しました。
+          success: カテゴリが更新されました。
+      component_permissions:
+        update:
+          error: このコンポーネントの権限の更新に問題がありました。
+          success: 権限は正常に更新されました。
+      components:
+        create:
+          error: このコンポーネントの作成に問題がありました。
+          success: コンポーネントが作成されました。
+        destroy:
+          error: このコンポーネントの削除中に問題が発生しました。
+          success: コンポーネントは正常に削除されました。
+        edit:
+          title: コンポーネントを編集
+          update: 更新
+        form:
+          default_step_settings: デフォルトのステップ設定
+          global_settings: グローバル設定
+          step_settings: ステップの設定
+        index:
+          add: コンポーネントを追加
+          headers:
+            actions: アクション
+            name: コンポーネント名
+            scope: コンポーネントのスコープ
+            type: コンポーネントタイプ
+        new:
+          add: コンポーネントを追加
+          title: 'コンポーネントを追加: %{name}'
+        publish:
+          success: コンポーネントは正常に公開されました。
+        title: コンポーネント
+        unpublish:
+          success: コンポーネントの非公開に成功しました。
+        update:
+          error: このコンポーネントの更新中に問題が発生しました。
+          success: コンポーネントは正常に更新されました。
+      conflicts:
+        attempts: 試行回数
+        'false': 'いいえ'
+        managed_user_name: 管理ユーザー
+        solved: 解決済み
+        title: 確認の競合
+        transfer:
+          email: Eメールアドレス
+          error: 参加者から管理参加者への移転中に問題が発生しました。
+          name: 名前
+          reason: 理由
+          success: 現在の移転が正常に完了しました。
+          title: 移行
+        'true': 'はい'
+        user_name: ユーザー
+      dashboard:
+        show:
+          view_more_logs: もっとログを見る
+          welcome: Decidim Admin Panelへようこそ。
+      domain_whitelist:
+        form:
+          domain_too_short: ドメインが短すぎます
+        update:
+          error: ドメインのホワイトリストを更新できませんでした
+          success: ドメインのホワイトリストが更新されました
+      exports:
+        export_as: "%{name} を %{export_format} 形式で取得"
+        formats:
+          CSV: CSV
+          Excel: エクセル
+          FormPDF: PDF
+          JSON: JSON
+        notice: エクスポートが進行中です。完了するとメールが届きます。
+      filters:
+        category_id_eq:
+          label: カテゴリ
+        filter_label: フィルター
+        invitation_accepted_at_present:
+          label: 招待が承認されました
+          values:
+            'false': 'いいえ'
+            'true': 'はい'
+        last_sign_in_at_present:
+          label: ログイン済み
+          values:
+            'false': 'いいえ'
+            'true': 'はい'
+        moderations:
+          reportable_type_string_eq:
+            label: タイプ
+        officialized_at_null:
+          label: 都道府県：
+          values:
+            'false': 公式化済み
+            'true': 公式化されていない
+        participatory_space_private_users:
+          user_invitation_accepted_at_not_null:
+            label: 招待が承認されました
+            values:
+              'false': 未承認
+              'true': 承認済み
+          user_invitation_sent_at_not_null:
+            label: 招待状の送信
+            values:
+              'false': 未送信
+              'true': 送信済み
+        private_space_eq:
+          label: 非公開
+          values:
+            'false': 公開
+            'true': 非公開
+        published_at_null:
+          label: 公開済み
+          values:
+            'false': 公開済み
+            'true': 未公開
+        scope_id_eq:
+          label: スコープ
+        search_label: 検索
+        search_placeholder:
+          name_or_nickname_or_email_cont: '%{collection} をメール、表示名、アカウントIDで検索します。'
+          reported_id_string_or_reported_content_cont: 報告可能なIDまたはコンテンツで %{collection} を検索します。
+          title_cont: '%{collection} をタイトルで検索します。'
+          user_name_or_user_email_cont: '%{collection} を名前またはメールアドレスで検索します。'
+        state_eq:
+          label: 都道府県：
+      forms:
+        file_help:
+          import:
+            explanation: 'ファイルのガイダンス:'
+            message_1: CSV、JSON、Excel (.xlsx) ファイルがサポートされています
+            message_2: CSV ファイルの場合、列間の区切り文字はセミコロン(";") でなければなりません。
+      help_sections:
+        error: ヘルプセクションの更新中に問題が発生しました
+        form:
+          save: 保存
+        success: ヘルプセクションが正常に更新されました
+      impersonatable_users:
+        index:
+          filter:
+            all: すべて
+            managed: 管理
+            not_managed: 未管理
+          filter_by: フィルター
+          impersonate: なりすまし
+          impersonate_new_managed_user: 新規参加者の管理
+          managed: 管理
+          name: 名前
+          needs_authorization_warning: この組織に対して少なくとも1つの承認が有効になっている必要があります。
+          not_managed: 未管理
+          promote: プロモート
+          search: 検索
+          status: ステータス
+          view_logs: ログを表示
+      impersonations:
+        close_session:
+          error: 現在の参加者管理セッションを閉じる際に問題が発生しました。
+          success: 現在の偽装セッションは正常に終了しました。
+        create:
+          error: 参加者の管理に問題がありました。
+          success: 管理対象の参加者が正常に作成されました。
+        form:
+          authorization_method: 認証方法
+          name: 名前
+          reason: 理由：
+        new:
+          impersonate: なりすまし
+          impersonate_existing_managed_user: 参加者を管理 "%{name}"
+          impersonate_existing_user: 参加者を管理 "%{name}"
+          impersonate_new_managed_user: 新規参加者の管理
+      imports:
+        creators:
+          proposalcreator: 提案クリエイター
+        error: インポート中に問題が発生しました
+        help:
+          proposalcreator: 'ファイルには、カラム名「title/en」と「body/en」(または、あなたが好む別のロケール、例: 「title/ja」と「body/ja」) が必要です。また、カラム名「scope/id」と「category/id」にも対応しています。'
+        import_from_file: ファイルからインポート
+        invalid_lines: リソース番号 %{invalid_lines} にエラーが見つかりました
+        new:
+          accepted_mime_types:
+            csv: csv
+            json: json
+            xlsx: xlsx
+          actions:
+            back: 戻る
+          file_legend: 解析されるインポート ファイルを追加します。
+          import: インポート
+        notice: "%{number} %{resource_name} を正常にインポートしました"
+      logs:
+        logs_list:
+          no_logs_yet: ログはまだありません
+      managed_users:
+        promotion:
+          error: 運営参加者の促進には問題がありました。
+          success: 管理対象の参加者が正常に昇進されました。
+        promotions:
+          new:
+            explanation: 管理された参加者は標準参加者に昇格することができます。 つまり、彼らはアプリケーションに招待され、あなたはそれらを再び管理することはできません。 招待された参加者は、招待を承諾するためのメールを受け取ります。
+            new_managed_user_promotion: 新しいマネージド参加者のプロモーション
+            promote: プロモート
+      menu:
+        admin_log: 管理者アクティビティログ
+        admins: 管理者
+        appearance: 外観
+        area_types: エリアの種類
+        areas: エリア
+        configuration: 設定
+        dashboard: ダッシュボード
+        external_domain_whitelist: 許可された外部ドメイン
+        help_sections: ヘルプセクション
+        homepage: ホームページ
+        impersonations: なりすまし
+        moderation: グローバルモデレーション
+        newsletters: ニュースレター
+        participants: 参加者
+        reported_users: 報告済みユーザー
+        scope_types: スコープの種類
+        scopes: スコープ
+        settings: 設定
+        static_pages: ページ
+        user_groups: グループ
+        users: 参加者
+      metrics:
+        metrics:
+          see_more_metrics: さらに指標を見る
+      models:
+        area:
+          fields:
+            area_type: エリアの種類
+            name: 名前
+        area_type:
+          fields:
+            name: 名前
+            plural: 複数形
+        attachment:
+          fields:
+            collection: フォルダ
+            content_type: タイプ
+            file_size: サイズ
+            title: タイトル
+          name: 添付ファイル
+        attachment_collection:
+          name: フォルダ
+        category:
+          name: カテゴリ
+        impersonation_log:
+          fields:
+            admin: 管理者
+            ended_at: 終了日時
+            expired_at: 有効期限：
+            reason: 理由：
+            started_at: 開始日時
+            user: 参加者
+        newsletter:
+          fields:
+            created_at: 作成日時
+            progress: 進捗状況
+            sent_at: 送信日時
+            sent_to: '送信先:'
+            subject: 件名
+          name: ニュースレター
+        participatory_space_private_user:
+          name: プロジェクトプライベート参加者
+        scope:
+          fields:
+            name: 名前
+            scope_type: スコープの種類
+        scope_type:
+          fields:
+            name: 名前
+            plural: 複数形
+        share_token:
+          fields:
+            created_at: 作成日時
+            expires_at: 有効期限
+            last_used_at: 前回の利用
+            times_used: 利用回数
+            token: トークン
+            user: 作成者
+        static_page:
+          fields:
+            created_at: 作成日時
+            title: タイトル
+        user:
+          fields:
+            created_at: 作成日
+            email: Eメールアドレス
+            last_sign_in_at: 最終ログイン日
+            name: 名前
+            role: ロール
+            roles:
+              admin: 管理者
+              user_manager: 参加者マネージャー
+            confirmed_at: メール認証完了日
+            real_name: &real_name 本名
+          name: 参加者
+        user_group:
+          fields:
+            actions: アクション
+            created_at: 作成日時
+            document_number: ドキュメント番号
+            name: 名前
+            phone: 電話番号
+            state: 都道府県：
+            users_count: 参加者数
+      moderated_users:
+        index:
+          actions:
+            block: ユーザーをブロック
+            title: アクション
+            unblock: ユーザーのブロックを解除
+            unreport: 報告解除
+          name: 名前
+          nickname: ニックネーム
+          reason: 理由
+          reports: レポート数
+          title: 報告されたユーザー一覧
+        report:
+          reasons:
+            does_not_belong: 所属していない
+            offensive: 攻撃的
+            spam: スパム
+        tabs:
+          blocked: ブロック済
+          unblocked: 未ブロック
+      moderations:
+        index:
+          title: モデレーション
+        report:
+          reasons:
+            does_not_belong: 属していません
+            offensive: 攻撃
+            spam: スパム
+        reports:
+          index:
+            author: 投稿者
+            callout_html: コンテンツは、そのアイテムの横にある %{icon} フラグをクリックすることによって、ユーザー（登録済みアカウントを持っている人であれば誰でも）によって通知されたときに、モデレーションパネルに表示されます。
+            content_original_language: コンテンツのオリジナル言語
+            participatory_space: プロジェクト
+            reported_content: 報告されたコンテンツ
+            see_current: 現状を見る
+            see_original: オリジナルを見る
+            title: モデレーションレポート
+          show:
+            report_details: 理由の詳細
+            report_language: 報告の言語
+            report_reason: '理由:'
+            title: 報告の詳細
+      newsletter_templates:
+        index:
+          preview_template: プレビュー
+          title: ニュースレターテンプレート
+          use_template: このテンプレートを使用
+        show:
+          preview: 'テンプレートをプレビュー: %{template_name}'
+          use_template: このテンプレートを使用
+      newsletters:
+        create:
+          error: このニュースレターの作成中に問題が発生しました。
+          success: ニュースレターが正常に作成されました。送信する前に確認してください。
+        deliver:
+          error: このニュースレターを配信する際に問題が発生しました。
+          success: ニュースレターが配信されました。
+        destroy:
+          error_already_sent: 'ニュースレターを破棄できません: 送信済みです。'
+          success: ニュースレターが正常に破棄されました。
+        edit:
+          save_and_preview: 保存してプレビュー
+          title: ニュースレターを編集
+        index:
+          all: すべて
+          all_users: 'すべてのユーザー '
+          and: 'と '
+          confirm_delete: このニュースレターを削除してもよろしいですか？
+          followers: 'フォロワー '
+          has_been_sent_to: '送信先: '
+          no_scopes: スコープなし
+          not_sent: 送信されていません
+          participants: '参加者 '
+          segmented_to: '%{subject}にセグメント : '
+          subscribed_count: '購読済み:'
+          title: ニュースレター
+        new:
+          save: 保存
+          title: 新しいニュースレター
+        select_recipients_to_deliver:
+          all_spaces: すべて
+          all_users_help: 確認済みのすべてのユーザーにニュースレターを送信します。
+          confirm_deliver: このニュースレターを配信してもよろしいですか？この操作は元に戻せません。
+          deliver: ニュースレターを配信する
+          followers_help: リスト内の選択したプロジェクトに従っているすべての確認済みユーザーにニュースレターを送信します。
+          none: なし
+          participants_help: 選択したプロジェクトに参加しているすべての確認済みユーザーにニュースレターを送信します。
+          recipients_count: このニュースレターは、 <strong id='recipients_count'>%{count}</strong> のユーザーに送信されます。
+          scopes_help: アカウントの「私の興味」設定で選択したスコープのいずれかを有効にしているユーザーにニュースレターを送信します。
+          select_scopes: アカウントの「趣味」設定で選択したスコープを有効にしているユーザーをフィルタリングします。
+          select_spaces: ニュースレターをセグメント化するプロジェクトを選択
+          select_users: ニュースレターを送信したいユーザーを選択してください
+          send_to_all_users: すべてのユーザーに送信
+          send_to_followers: フォロワーに送る
+          send_to_participants: 参加者に送る
+          title: 配信する宛先を選択
+          warning: "<strong>注意:</strong> このニュースレターは、通知設定で <em>ニュースレターを受信したい</em> ユーザーにのみ送信されます。"
+        send:
+          no_recipients: この選択の受信者はありません
+        show:
+          preview: プレビュー
+          select_recipients_to_deliver: 配信する宛先を選択
+          subject: 件名
+        update:
+          error: このニュースレターの更新中に問題が発生しました。
+          success: ニュースレターは正常に更新されました。送信する前に確認してください。
+      officializations:
+        block:
+          error: 参加者のブロック中にエラーが発生しました
+          success: 参加者が正常にブロックされました
+        create:
+          success: 参加者が正常に公式化されました
+        destroy:
+          success: 参加者が非公式化されました
+        index:
+          actions: アクション
+          badge: バッジ
+          block: ユーザーをブロック
+          created_at: 作成日時
+          confirmed_at: メール認証完了日
+          name: 名前
+          real_name: *real_name
+          nickname: アカウントID
+          not_officialized: 公式化されていない
+          officialize: 公式化
+          officialized: 公式化済み
+          reofficialize: Reofficize
+          reports: 報告
+          show_email: メールアドレスを表示
+          status: ステータス
+          unblock: ユーザーのブロックを解除
+          unofficialize: 非公式化
+        new:
+          badge: 公式バッジ
+          officialize: 公式化
+          title: 参加者 "%{name} " を正規化
+        show_email_modal:
+          close_modal: モーダルを閉じる
+          description: 直接参加者に連絡する必要がある場合、彼らの電子メールアドレスを見るために表示ボタンをクリックしてください。このアクションは記録されます。
+          email_address: メールアドレス
+          full_name: フルネーム
+          hidden: hidden
+          show: 表示
+          title: 参加者のメールアドレスを表示
+        unblock:
+          error: 参加者のブロック解除中にエラーが発生しました
+          success: 参加者のブロックを解除しました
+      organization:
+        edit:
+          title: 組織を編集
+          update: 更新
+        form:
+          facebook: Facebook
+          github: GitHub
+          instagram: Instagram
+          rich_text_editor_in_public_views_help: 一部のテキストエリアでは、参加者はリッチテキストエディタを使用してHTMLタグを挿入することができます。
+          social_handlers: ソーシャル
+          twitter: Twitter
+          url: URL
+          youtube: YouTube
+        update:
+          error: この組織の更新に問題がありました。
+          success: 組織が更新されました。
+      organization_appearance:
+        edit:
+          update: 更新
+        form:
+          colors:
+            colors_title: 組織の色
+            header_snippets_help: HTML head 内にコードを追加するには、このフィールドを使用します。 最も一般的な用途は、追加の JavaScript や CSS を必要とするサードパーティのサービスを統合することです。 また、HTML にメタタグを追加するためにも使用できます。 これは公開ページでのみ表示され、管理用セクションでは表示されないことに注意してください。
+          cta_button_path_help: 'ホームページへのリンクの「通話先アクション」ボタンの場所を上書きすることができます。完全なURLではなく、部分的なパスを使用してください。 文字、数字、ダッシュ、スラッシュを使用でき、文字で始まる必要があります。 Call To Actionボタンは、ウェルカムテキストと説明の間のホームページに表示されます。例: %{url}'
+          cta_button_text_help: 組織の利用可能な言語ごとにホームページの [Call To Action] ボタンのテキストを上書きできます。 設定されていない場合は、デフォルト値が使用されます。 Call To Actionボタンは、ウェルカムテキストと説明の間のホームページに表示されます。
+          homepage_appearance_title: ホームページの外観を編集
+          homepage_highlighted_content_banner_title: ハイライトされたコンテンツバナー
+          images:
+            layout_appearance_title: レイアウトを編集
+            preview: プレビュー
+          omnipresent_banner_appearance_title: Edit omnipresent banner
+      organization_external_domain_whitelist:
+        edit:
+          update: 更新
+        external_domain:
+          down: 下げる
+          external_domain: 外部ドメイン
+          remove: 削除
+          up: 上げる
+        form:
+          add: ホワイトリストに追加
+          title: 外部ドメインのホワイトリスト
+      organization_homepage:
+        edit:
+          active_content_blocks: アクティブなコンテンツブロック
+          inactive_content_blocks: 非アクティブコンテンツブロック
+      organization_homepage_content_blocks:
+        edit:
+          update: 更新
+      participatory_space_private_users:
+        create:
+          error: このプロジェクトにプライベート参加者を追加する際に問題が発生しました。
+          success: プロジェクトのプライベート参加者アクセスが正常に作成されました。
+        destroy:
+          error: このプロジェクトのプライベート参加者を削除する際に問題が発生しました。
+          success: プロジェクトのプライベート参加者アクセスが正常に破棄されました。
+        index:
+          import_via_csv: CSV形式でインポート
+          title: プロジェクトプライベート参加者
+        new:
+          create: 作成
+          title: 新しい参加空間のプライベート参加者。
+      participatory_space_private_users_csv_imports:
+        create:
+          invalid: CSVファイルの読み込みに問題が発生しました。
+          success: CSVファイルが正常にアップロードされました。出席者に招待メールを送信します。時間がかかる場合があります。
+        new:
+          explanation: 'CSV ファイルをアップロードします。ファイルは 1列目に電子メール、2列目に名前を持つ形式である必要があります(email, name)。 ユーザー名に `<>?%&^*#@()[]=+:;"{}\|`のような無効な文字を使用しないでください。'
+          title: CSVファイルをアップロード
+          upload: アップロード
+      resource_permissions:
+        edit:
+          submit: 送信
+          title: 権限の編集
+        update:
+          success: 権限は正常に更新されました。
+      resources:
+        index:
+          headers:
+            scope: スコープ
+      scope_types:
+        create:
+          error: 新しいスコープタイプの作成中に問題が発生しました。
+          success: スコープタイプが正常に作成されました。
+        destroy:
+          success: スコープの種類が削除されました
+        edit:
+          title: スコープの種類を編集
+          update: 更新
+        new:
+          create: スコープの種類を作成
+          title: 新しいスコープ
+        update:
+          error: このスコープタイプの更新中に問題が発生しました。
+          success: スコープの種類が正常に更新されました
+      scopes:
+        create:
+          error: 新しいスコープの作成中に問題が発生しました。
+          success: スコープが正常に作成されました。
+        destroy:
+          success: スコープが削除されました
+        edit:
+          title: スコープを編集
+          update: 更新
+        new:
+          create: スコープを作成
+          title: 新しいスコープ
+        no_scopes: このレベルではスコープがありません。
+        update:
+          error: スコープの更新中に問題が発生しました。
+          success: スコープが正常に更新されました
+      share_tokens:
+        actions:
+          confirm_destroy: このトークンを削除してもよろしいですか？
+          destroy: 削除
+          share: 共有
+        destroy:
+          error: トークンを削除する際に問題が発生しました。
+          success: トークンが正常に破棄されました。
+        share_tokens:
+          empty: アクティブなトークンはありません
+          help: これらのトークンは、公開されていないリソースをすべてのユーザーに公開するために使用されます。 リソースが公開されると、それらは非表示になります。共有可能なURLにアクセスするにはトークンの共有アイコンをクリックしてください。
+          title: トークンを共有
+      shared:
+        gallery:
+          add_images: 画像を追加
+          delete_image: 画像を削除
+          gallery_legend: 画像ギャラリーを追加 (オプション)
+      static_page_topics:
+        create:
+          error: 新しいトピックを作成中に問題が発生しました。
+          success: トピックを正常に作成しました。
+        destroy:
+          success: トピックを削除しました
+        edit:
+          title: トピックを編集
+          update: トピックを更新
+        new:
+          create: トピックを作成
+          title: 新規トピック
+        update:
+          error: このトピックの更新中に問題が発生しました。
+          success: トピックを更新しました
+      static_pages:
+        actions:
+          view: 公開ページを表示
+        create:
+          error: 新しいページの作成中に問題が発生しました。
+          success: ページの作成に成功しました。
+        destroy:
+          success: ページを削除しました
+        edit:
+          changed_notably_help: チェックした場合、参加者に新しい利用規約に同意するよう通知されます。
+          title: ページを編集
+          update: 更新
+        form:
+          none: なし
+          slug_help: 'ここでは完全な URL ではなく、部分パスを使用してください。文字、数字、ダッシュ、スラッシュを受け入れ、文字で始める必要があります。例: %{url}'
+        index:
+          last_notable_change: 前回の注目すべき変更
+        new:
+          create: ページを作成
+          title: 新しいページ
+        topic:
+          destroy: トピックを削除
+          edit: トピックを編集
+          empty: このトピックの下にはページがありません
+          without_topic: トピックがないページ
+        update:
+          error: このページの更新中に問題が発生しました。
+          success: ページが正常に更新されました
+      titles:
+        admin_log: 管理者ログ
+        area_types: エリアの種類
+        areas: エリア
+        authorization_workflows: 確認方法
+        dashboard: ダッシュボード
+        impersonatable_users: 管理可能な参加者
+        impersonations: 参加者管理
+        metrics: 指標
+        panel: 管理者
+        participants: 参加者
+        scope_types: スコープの種類
+        scopes: スコープ
+        static_pages: ページ
+        statistics: アクティビティ
+        user_groups: グループ
+        users: 参加者
+      user_group:
+        csv_verify:
+          invalid: CSVファイルの読み込みに問題が発生しました。
+          success: CSVファイルが正常にアップロードされました。条件に一致するグループを検証しています。しばらく時間がかかる場合があります。
+        reject:
+          invalid: このグループを拒否する際に問題が発生しました。
+          success: グループを拒否しました
+        verify:
+          invalid: このグループを確認する際に問題が発生しました。
+          success: グループが正常に検証されました
+      user_groups:
+        index:
+          filter:
+            all: すべて
+            pending: 保留中
+            rejected: 拒否
+            verified: 確認済み
+          filter_by: フィルター
+          search: 検索
+          state:
+            pending: 保留中
+            rejected: 拒否
+            verified: 確認済み
+          verify_via_csv: CSVで確認する
+      user_groups_csv_verifications:
+        new:
+          explanation: CSVファイルをアップロードします。ファイルの最初のカラムにある組織内のグループの公式メールをヘッダーなしで送信する必要があります。 メールが確認され、CSVファイルにメールが表示されているグループのみが検証されます。
+          title: CSVファイルをアップロード
+          upload: アップロード
+      users:
+        create:
+          error: 管理者の招待に問題が発生しました。
+          success: 参加者の招待に成功しました。
+        destroy:
+          error: 管理者の削除中に問題が発生しました。
+          success: 参加者は管理者ではありません。
+        form:
+          email: Eメールアドレス
+          name: 名前
+          role: ロール
+        new:
+          create: 招待
+          title: 管理者として参加者を招待
+      users_statistics:
+        users_count:
+          admins: 管理者
+          last_day: 最終日
+          last_month: Last month
+          last_week: 先週の
+          no_users_count_statistics_yet: まだユーザー数の統計がありません
+          participants: 参加者
+      view_public_page: 公開ページを表示
+    forms:
+      errors:
+        impersonate_user:
+          reason: 管理されていない参加者を管理する場合、その理由を入力する必要があります
+    metrics:
+      blocked_users:
+        object: ブロックされたユーザー
+        title: ブロックされたユーザー
+      reported_users:
+        object: 報告されたユーザー
+        title: 報告したユーザー
+      user_reports:
+        object: ユーザーの報告
+        title: ユーザーの報告
+    moderations:
+      actions:
+        expand: 展開
+        hidden: Hidden
+        hide: 非表示
+        not_hidden: 非表示にしない
+        title: アクション
+        unhide: Unhide
+        unreport: 報告解除
+      admin:
+        reportable:
+          hide:
+            invalid: リソースを隠す際に問題が発生しました。
+            success: リソースを非表示にしました。
+          unhide:
+            invalid: リソースの非表示解除中に問題が発生しました。
+            success: リソースの非表示を解除しました。
+          unreport:
+            invalid: リソースの報告解除中に問題が発生しました。
+            success: リソースの報告を解除しました。
+      models:
+        moderation:
+          fields:
+            created_at: 作成日
+            hidden_at: '非表示:'
+            participatory_space: プロジェクト
+            report_count: カウント
+            reportable_id: Id
+            reportable_type: 種別
+            reported_content_url: 報告されたコンテンツ URL
+            reports: レポート
+            visit_url: URL を参照
+        report:
+          fields:
+            details: 理由の詳細
+            locale: 言語
+            reason: 理由
+  errors:
+    messages:
+      invalid_json: 無効なJSON
+  layouts:
+    decidim:
+      admin:
+        global_moderations:
+          title: グローバルモデレーション
+        newsletters:
+          title: ニュースレター
+        settings:
+          title: 設定
+        users:
+          title: 参加者
